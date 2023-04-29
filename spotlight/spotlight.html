@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>About Us</title>
+  <link rel="stylesheet" type="text/css" href="./spot.css">
+  <link rel="stylesheet" type="text/css" href="../navbar.css">
+
+  <link rel="stylesheet" type="text/css" href="../footer.css">
+  <script src="./spot.js"></script>
+</head>
+
+<body>
+  <nav class="navbar" style="margin: 0px;">
+    <div class="max-width">
+      <div style="display: flex;">
+        <div class="logo" style="display: flex;align-items: center;"><a href="../mainpage.html">Track<span>Hive</span></a>
+        </div>
+        <img src="../../about/logo1.png" alt="" height="55px">
+      </div>
+      <ul class="menu">
+        <li><a href="../search.html" class="menu-btn">Search</a></li>
+        <li><a href="../mainpage.html" class="menu-btn">Home</a></li>
+        <li><a href="../about/about.html" class="menu-btn">About</a></li>
+        <li><a href="../artists.html" class="menu-btn">Artists</a></li>
+        <li><a href="./spotlight.html" class="menu-btn">Fav Artist</a></li>
+
+        <!-- <li><a href="#" class="menu-btn">News & Updates</a></li> -->
+      </ul>
+      <div class="menu-btn">
+      </div>
+    </div>
+  </nav>
+  <div style="display: flex;">
+    <section class="wrapper">
+      <div class="card" data-effect="zoom">
+        </button>
+        <div class="zoom">
+          <figure class="card__image">
+            <img src="./photos/drake.jpeg" alt="Short description">
+          </figure>
+          <div class="card__header">
+            <figure class="card__profile">
+              <img src="./photos/drakecover.jpeg" alt="Short description">
+
+            </figure>
+          </div>
+          <div class="card__body">
+            <h3 class="card__name">Drake</h3>
+            <p class="card__job">Musician & Singer</p>
+            <p class="card__bio"> Drake, whose full name is Aubrey Drake Graham, is a Canadian rapper, singer,
+              songwriter,
+              actor, and entrepreneur. He was born on October 24, 1986, in Toronto, Ontario, Canada.
+
+            </p>
+          </div>
+          <div class="card__footer">
+            <p class="card__date">2 July 2023</p>
+            <p class=""></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="form-container">
+      <h2>Leave a Review</h2>
+      <form id="review-form" onsubmit="handleSubmit(event)" ;return false>
+        <div class="form-group">
+          <label for="name">Your name:</label>
+          <input id="name" type="text" id="name" name="name" required>
+        </div>
+
+
+
+        <div class="rt-container">
+          <div class="col-rt-12">
+            <form>
+              <fieldset>
+                <span class="star-cb-group">
+                  <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
+                  <input type="radio" id="rating-4" name="rating" value="4" /><label for="rating-4">4</label>
+                  <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
+                  <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
+                  <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
+                  <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear" /><label
+                    for="rating-0">0</label>
+                </span>
+              </fieldset>
+            </form>
+          </div>
+
+          <div class="form-group">
+            <label for="review">Review:</label>
+            <textarea id="review" name="review" required></textarea>
+          </div>
+
+          <button id="submit-button" type="submit">Submit Review</button>
+      </form>
+      <table class="review-table">
+        <tr  id="table_row">
+          <th>Name</th>
+          <th>Rating</th>
+          <th>Review</th>
+        </tr>
+      </table>
+      
+    </div>
+  </div>
+  </div>
+
+
+  <!-- <div>
+    <p id="album">
+    Upcoming Album
+    </p>
+  </div> -->
+
+
+
+  <div class="bgimg">
+    <div class="topleft">
+      <!-- <p>Logo</p> -->
+
+      <div style="display: flex;">
+        <a href="https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4">
+          <img id="spot" src="./photos/spotify.png" />
+        </a>
+        <a href=" https://music.youtube.com/channel/UCU6cE7pdJPc6DU2jSrKEsdQ">
+          <img src="./photos/yt.png" style="width: 10%; " />
+
+        </a>
+      </div>
+
+
+    </div>
+    <div class="middle">
+      <h1 style="color: black;">COMING SOON</h1>
+      <hr>
+      <p id="demo" style="font-size: 3rem;font-weight: 600;color: black;">35 days left</p>
+    </div>
+    <div class="bottomleft">
+      <p>Some text</p>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-links">
+        <a href="../../about/about.html">About</a>
+        <a href="../../mainpage.html">Main page</a>
+        <a href="../../artists.html">Artists</a>
+
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

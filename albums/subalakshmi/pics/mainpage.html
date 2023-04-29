@@ -1,0 +1,314 @@
+ <!-- <!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        body {
+          font-family: 'Open Sans', sans-serif;
+          background-color: #f7f7f7;
+          color: #333;
+          line-height: 1.5;
+        }
+        
+        h1 {
+          font-size: 3em;
+          text-align: center;
+          margin: 2em 0;
+          color: #0077c2;
+        }
+        
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+        
+                li {
+          flex: 1 0 17.5%;
+          text-align: center;
+          margin: 1em;
+          background-color: #fff;
+          border-radius: 4px;
+          box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+          transition: all 0.2s ease-in-out;
+        }
+          h2 {
+      top: 40%;
+      font-size: 3rem;
+      line-height: 1.2; 
+    }
+
+        
+        img {
+          display: block;
+          margin: 0 auto;
+          max-width: 100%;
+          height: 100%;
+          border-radius: 4px 4px 0 0;
+        }
+        
+        h2 {
+          font-size: 1.2em;
+          margin: 1em 0;
+          color: #0077c2;
+        }
+        
+        a {
+          text-decoration: none;
+          color: #333;
+        }        
+      </style>      
+  </head>
+  <body>
+    <h1>The Vault</h1>
+    <ul>
+      <li>
+        <a href="/albums/drake/drake-albums-page.html">
+          <img src="albums/drake/photos/drake.jpg" alt="Drake">
+          <h2>Drake</h2>
+        </a>
+      </li>
+      <li>
+        <a href="/albums/kanye/kanye-albums-page.html">
+          <img src="daftpunk.jpg" alt="Kanye">
+          <h2>Kanye</h2>
+        </a>
+      </li>
+      <li>
+        <a href="/albums/sosa/sosa-album-page.html">
+          <img src="bjork.jpg" alt="Chief Keef">
+          <h2>Chief Keef</h2>
+        </a>
+      </li>
+      <li>
+        <a href="/albums/subalakshmi/subalakshmi-album-page.html">
+          <img src="" alt="M.S. Subalakshmi">
+          <h2>M.S. Subalakshmi</h2>
+        </a>
+      </li>
+      <li>
+        <a href="/albums/dyingfetus/dyingfetus-albums-page.html">
+          <img src="beatles.jpg" alt="Dying Fetus">
+          <h2>Dying Fetus</h2>
+        </a>
+      </li>
+    </ul>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html> -->
+<!-- 
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        body {
+          font-family: 'Open Sans', sans-serif;
+          background-color: #f7f7f7;
+          color: #333;
+          line-height: 1.5;
+        }
+        h1 {
+      font-size: 3em;
+      text-align: center;
+      margin: 2em 0;
+      color: #0077c2;
+    }
+    
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    li {
+      flex: 1 0 30%;
+      text-align: center;
+      margin: 1em;
+      background-color: #fff;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: all 0.2s ease-in-out;
+    }
+    
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: 100%;
+      border-radius: 4px 4px 0 0;
+    }
+    
+    h2 {
+      font-size: 1.2em;
+      margin: 1em 0;
+      color: #0077c2;
+    }
+    
+    a {
+      text-decoration: none;
+      color: #333;
+    }        
+  </style>      
+</head>
+<body>
+  <h1>Top Charts</h1>
+  <h2>Top Artists</h2>
+  <ul>
+    <li>
+      <a href="/artists/ariana/ariana-artist-page.html">
+        <img src="https://via.placeholder.com/300x300" alt="Ariana Grande">
+        <h2>Ariana Grande</h2>
+      </a>
+    </li>
+    <li>
+      <a href="/artists/drake/drake-artist-page.html">
+        <img src="https://via.placeholder.com/300x300" alt="Drake">
+        <h2>Drake</h2>
+      </a>
+    </li>
+    <li>
+      <a href="/artists/taylor/taylor-artist-page.html">
+        <img src="https://via.placeholder.com/300x300" alt="Taylor Swift">
+        <h2>Taylor Swift</h2>
+      </a>
+    </li>
+  </ul>
+  <h2>Top Albums</h2>
+  <ul>
+    <li>
+      <a href="/albums/thriller/thriller-album-page.html">
+        <img src="https://via.placeholder.com/300x300" alt="Thriller">
+        <h2>Thriller</h2>
+      </a>
+    </li>
+    <li>
+      <a href="/albums/21/21-album-page.html">
+        <img src="https://via.placeholder.com/300x300" alt="21">
+        <h2>21</h2>
+      </a>
+    </li>
+    <li>
+      <a href="/albums/hyrbid-theory/hybrid-theory-album-page.html">
+        <img src="https://via.placeholder.com/300x300" alt="Hybrid Theory">
+        <h2>Hybrid Theory</h2>
+      </a>
+    </li>
+  </ul>
+  <h2>Top Songs</h2>
+  <ul>
+    <li>
+      <a href="/songs -->
+
+
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <link rel="stylesheet" href="style.css">
+          </head>
+          <body>
+            <header>
+              <div class="logo">
+                <img src="logo.png" alt="Billboard Logo">
+              </div>
+              <nav>
+                <!-- <ul>
+                  <li><a href="#">Charts</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Videos</a></li>
+                  <li><a href="#">Events</a></li>
+                </ul> -->
+              </nav>
+            </header>
+            <main>
+              </section>
+              <section id="top-artists">
+                <h2>Top Artists</h2>
+                <ul>
+                  <li>
+                    <article>
+                      <a href="#">
+                        <img src="ariana-grande.jpg" alt="Ariana Grande">
+                        <div class="details">
+                          <h3>Drake</h3>
+                        </div>
+                      </a>
+                    </article>
+                  </li>
+                  <li>
+                    <article>
+                      <a href="#">
+                        <img src="drake.jpg" alt="Drake">
+                        <div class="details">
+                          <h3>Chief Keef</h3>
+                        </div>
+                      </a>
+                    </article>
+                  </li>
+                  <li>
+                    <article>
+                      <a href="#">
+                        <img src="taylor-swift.jpg" alt="Taylor Swift">
+                        <div class="details">
+                          <h3>Kanye West</h3>
+                        </div>
+                      </a>
+                    </article>
+                  </li>
+                </ul>
+              </section>
+              <section id="top-albums">
+                <h2>Top Albums</h2>
+                <ul>
+                  <li>
+                    <article>
+                      <a href="#">
+                        <img src="thriller.jpg" alt="Thriller">
+                        <div class="details">
+                          <h3>Thriller</h3>
+                          <p>Chief Keef</p>
+                        </div>
+                      </a>
+                    </article>
+        

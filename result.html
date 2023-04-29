@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>iTunes Search Results</title>
+    <link rel="stylesheet" href="./result.css" />
+    <!-- <link rel="stylesheet" href="main.css" /> -->
+    
+  </head>
+  <body>
+    <nav class="navbar" >
+      <div class="max-width" style="padding-left: 20px;">
+          <div style="display: flex;">
+              <div class="logo" style="display: flex;align-items: center;"><a href="">Track<span>Hive</span></a>
+              </div>
+              <img src="./about/logo1.png" alt="" height="55px">
+          </div>
+
+          <ul class="menu">
+              <li><a href="search.html" class="menu-btn">Search</a></li>
+              <li><a href="./mainpage.html" class="menu-btn">Home</a></li>
+              <li><a href="./about/about.html" class="menu-btn">About</a></li>
+              <li><a href="./artists.html" class="menu-btn">Artists</a></li>
+              <li><a href="./mainpage.html" class="menu-btn">Albums</a></li>
+          </ul>
+          <div class="menu-btn">
+          </div>
+      </div>
+  </nav>
+    <h1>iTunes Search Results</h1>
+
+    <div class="filter-controls">
+      <label for="duration-filter">Filter by duration (in minutes):</label>
+      <input type="number" id="duration-filter" min="1" max="10" />
+      <label for="explicit-filter">Filter explicit results:</label>
+<input type="checkbox" id="explicit-filter" />
+
+<button id="apply-explicit-filter-button">Apply filter</button>
+
+
+
+      <button id="clear-filter-button">Clear filters</button>
+    </div>
+
+    <div id="results"></div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+        <a href="./about/about.html">About</a>
+        <a href="./mainpage.html">Main page</a>
+        <a href="./artists.html">Artists</a>
+  
+        </div>
+      </div>
+      </footer>
+
+    <script src="./api.js"></script>
+    <script src="filter.js"></script>
+  </body>
+</html>

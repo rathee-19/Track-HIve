@@ -117,7 +117,7 @@ section .title::before{
   }
   
   .person img {
-    width: 300px;
+    width: 350px;
     border-radius: 70%;
     margin-right: 180px;
     margin-left: 180px;
@@ -129,7 +129,7 @@ section .title::before{
   }
   
   .person-details {
-    margin: 0 50px;
+    margin: -2vh 6vh 0vh 10vh ;
     text-align: center;
   }
   

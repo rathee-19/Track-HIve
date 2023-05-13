@@ -4,6 +4,8 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="../../../navbar.css">
 	<title>ONE</title>
+	<link rel="stylesheet" href="../../album.css">
+
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
@@ -96,6 +98,82 @@
 			transform: scale(1.2);
 			color: #000000;
 		}
+
+
+
+		/* ---------------------------------------------- */
+/* 
+		.add-btn {
+    width: 100px;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.add-btn:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.add-btn:active {
+    color: #000
+}
+
+.add-btn:active:after {
+    background: transparent;
+}
+
+.add-btn:hover:before {
+    opacity: 1;
+}
+
+.add-btn:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+
+
+
+
+
+ */
+/* --------------------------------------------------------------- */
+
+  
 	</style>
 </head>
 
@@ -108,12 +186,13 @@
 				<img src="../../../about/logo1.png" alt="" height="55px">
 			</div>
 			<ul class="menu">
-				<li><a href="#Search" class="menu-btn">Search</a></li>
-				<li><a href="../../../mainpage.html" class="menu-btn">Home</a></li>
+				<li><a href="../../../search.html" class="menu-btn">Search</a></li>
+				<li><a href="../../../index.html" class="menu-btn">Home</a></li>
 				<li><a href="../../../about/about.html" class="menu-btn">About</a></li>
 				<li><a href="../../../artists.html" class="menu-btn">Artists</a></li>
 				<li><a href="../../../spotlight/spotlight.html" class="menu-btn">Fav Artist</a></li>
-				<!-- <li><a href="#" class="menu-btn">News & Updates</a></li> -->
+			
+				<li><a href="../../../playlist.html" class="menu-btn">Playlist</a></li>	<!-- <li><a href="#" class="menu-btn">News & Updates</a></li> -->
 			</ul>
 			<div class="menu-btn">
 			</div>
@@ -133,85 +212,119 @@
 				<td>1</td>
 				<td>Aashiq Awaara</td>
 				<td>4:17</td>
+				<td><button class="add-btn" data-track="74">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>2</td>
 				<td>Light Kardo Band </td>
 				<td>3:08</td>
+				<td><button class="add-btn" data-track="75">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>3</td>
 				<td>Right Up There</td>
 				<td>5:00</td>
+				<td><button class="add-btn" data-track="76">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>4</td>
 				<td>Therapy</td>
 				<td>3:46</td>
+				<td><button class="add-btn" data-track="77">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>5</td>
 				<td>Heartless</td>
 				<td>3:30</td>
+				<td><button class="add-btn" data-track="78">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>6</td>
 				<td>Dj wale Babu</td>
 				<td>2:49</td>
+				<td><button class="add-btn" data-track="79">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>7</td>
 				<td>Nain</td>
 				<td>2:46</td>
+				<td><button class="add-btn" data-track="80">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>8</td>
 				<td>Aise Na Dekh Mujhe</td>
 				<td>2:57</td>
+				<td><button class="add-btn" data-track="81">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>9</td>
 				<td>ILL.I.AM </td>
 				<td>3:00</td>
+				<td><button class="add-btn" data-track="82">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>10</td>
 				<td>No Limit</td>
 				<td>3:41</td>
+				<td><button class="add-btn" data-track="82">Add to playlist</button></td>
+
 			<tr>
 					<td>11</td>
 				<td>Call waiting</td>
 				<td>3:53</td>
+				<td><button class="add-btn" data-track="84">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>12</td>
 				<td>Oxygen</td>
 				<td>2:43</td>
+				<td><button class="add-btn" data-track="85">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>13</td>
 				<td>Mercy</td>
 				<td>2:43</td>
+				<td><button class="add-btn" data-track="86">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>14</td>
 				<td>Jaavi Na  </td>
 				<td>3:25</td>
+				<td><button class="add-btn" data-track="87">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>15</td>
 				<td>Kya kehte ho</td>
 				<td>2:55</td>
+				<td><button class="add-btn" data-track="88">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>16</td>
 				<td>She Move It Like   </td>
 				<td>3:02</td>
+				<td><button class="add-btn" data-track="89">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>17</td>
 				<td>Take Off</td>
 				<td>4:15</td>
+				<td><button class="add-btn" data-track="90">Add to playlist</button></td>
+
 			</tr>
 		</tbody>
 	</table>
@@ -225,6 +338,8 @@
 			</div>
 		</div>
 	</footer>
+
+<script src="../../../add.js"></script>
 </body>
 
 </html>

@@ -35,8 +35,15 @@
 			text-align: left;
 		}
 
+		tr {
+			transition: transform 0.5s ease;
+
+		}
+
 		tr:hover {
 			background-color: #434242;
+			/* color: #70cafa; */
+			transform: scale(1.05);
 		}
 
 		footer {
@@ -107,11 +114,12 @@
 				<img src="../../../about/logo1.png" alt="" height="55px">
 			</div>
 			<ul class="menu">
-				<li><a href="#Search" class="menu-btn">Search</a></li>
-				<li><a href="../../../mainpage.html" class="menu-btn">Home</a></li>
+				<li><a href="../../../search.html" class="menu-btn">Search</a></li>
+				<li><a href="../../../index.html" class="menu-btn">Home</a></li>
 				<li><a href="../../../about/about.html" class="menu-btn">About</a></li>
 				<li><a href="../../../artists.html" class="menu-btn">Artists</a></li>
 				<li><a href="../../../spotlight/spotlight.html" class="menu-btn">Fav Artist</a></li>
+				<li><a href="../../../playlist.html" class="menu-btn">Playlist</a></li>
 				<!-- <li><a href="#" class="menu-btn">News & Updates</a></li> -->
 			</ul>
 			<div class="menu-btn">
@@ -132,51 +140,61 @@
 				<td>1</td>
 				<td>Mahiya ve Soniya(soul mix)</td>
 				<td>3:04</td>
+				<td><button class="add-btn" data-track="1">Add to playlist</button></td>
 			</tr>
 			<tr>
 				<td>2</td>
 				<td>Mahi ve </td>
 				<td>4:01</td>
+				<td><button class="add-btn" data-track="2">Add to playlist</button></td>
 			</tr>
 			<tr>
 				<td>3</td>
 				<td>O Re Piya</td>
 				<td>4:2</td>
+				<td><button class="add-btn" data-track="3">Add to playlist</button></td>
 			</tr>
 			<tr>
 				<td>4</td>
 				<td>Ehsaas</td>
 				<td>3:45</td>
+				<td><button class="add-btn" data-track="4">Add to playlist</button></td>
 			</tr>
 			<tr>
 				<td>5</td>
 				<td>Mahiya ve soniya 4:40</td>
 				<td>3:23</td>
+				<td><button class="add-btn" data-track="5">Add to playlist</button></td>
 			</tr>
 			<tr>
 				<td>6</td>
 				<td>Hum kis Galli Jaa Rahe Hai</td>
 				<td>5:01</td>
+				<td><button class="add-btn" data-track="6">Add to playlist</button></td>
 			</tr>
 			<tr>
 				<td>7</td>
 				<td>Doorie</td>
 				<td>4:51</td>
+				<td><button class="add-btn" data-track="7">Add to playlist</button></td>
 			</tr>
 			<tr>
 				<td>8</td>
 				<td>Maula</td>
 				<td>3:49</td>
+				<td><button class="add-btn" data-track="8">Add to playlist</button></td>
 			</tr>
 			<tr>
 				<td>9</td>
 				<td>Kuch Is Tarah </td>
 				<td>5:14</td>
+				<td><button class="add-btn" data-track="9">Add to playlist</button></td>
 			</tr>
 			<tr>
 				<td>10</td>
 				<td>Yakeen</td>
 				<td>4:02</td>
+				<td><button class="add-btn" data-track="10">Add to playlist</button></td>
 			</tr>
 		</tbody>
 	</table>
@@ -190,6 +208,7 @@
 			</div>
 		</div>
 	</footer>
+	<script src="../../../add.js"></script>
 </body>
 
 </html>

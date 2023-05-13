@@ -1,95 +1,174 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<link rel="stylesheet" type="text/css" href="../../../navbar.css"> 
+	<link rel="stylesheet" type="text/css" href="../../../navbar.css">
 	<title>The College Dropout</title>
+	<link rel="stylesheet" href="../../album.css">
+
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
 		body {
-            color: rgb(250, 250, 250);
+			color: rgb(250, 250, 250);
 			font-family: 'Montserrat', sans-serif;
-		background-image: url("../photos/moon_child_era.jpeg");
-		background-size: cover;
-		margin: 0px;
-          padding: 0px;
+			background-image: url("../photos/moon_child_era.jpeg");
+			background-size: cover;
+			margin: 0px;
+			padding: 0px;
 		}
+
 		h1 {
 			margin-top: 120px;
 			text-align: center;
 		}
+
 		table {
 			margin-top: 20px;
 			margin-left: 400px;
 			border-collapse: collapse;
 			width: 50%;
 		}
-		td, th {
+
+		td,
+		th {
 			padding: 8px;
 			border-bottom: 1px solid #ddd;
 			text-align: left;
+
 		}
+
+		tr {
+			transition: transform 0.5s ease;
+
+		}
+
 		tr:hover {
 			background-color: #434242;
+			/* color: #70cafa; */
+			transform: scale(1.05);
 		}
 
 		footer {
-  position: fixed;
-  bottom: 0;
-  background-color: #2195ca;
-  color: #fff;
-  font-size: 18px;
-  font-family: 'Ubuntu', sans-serif;
-  padding: 5px 0 5px 0;
-  width: 100%;
-  text-align: center;
-}
-/* .footer-container {
+			position: fixed;
+			bottom: 0;
+			background-color: #2195ca;
+			color: #fff;
+			font-size: 18px;
+			font-family: 'Ubuntu', sans-serif;
+			padding: 5px 0 5px 0;
+			width: 100%;
+			text-align: center;
+		}
+
+		/* .footer-container {
   max-width: 1200px;
   height: 10px; /* adjusted height */
-  /* margin: 0 auto;
+		/* margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }  */
-.footer-links {
-  display: inline-block;
+		.footer-links {
+			display: inline-block;
+		}
+
+		.footer-links a {
+			color: #fff;
+			text-decoration: none;
+			padding: 10px 20px;
+			border-radius: 20px;
+		}
+
+		.footer-links a:hover {
+			background-color: #2195ca;
+			color: #f9f3f3;
+		}
+
+		.footer-links {
+			display: flex;
+			justify-content: center;
+
+		}
+
+
+		.footer-links a {
+			display: block;
+			color: #ffffff;
+			font-size: 18px;
+			font-weight: 500;
+
+			transition: transform 0.3s ease, color 0.3s ease;
+		}
+
+		.footer-links a:hover {
+			transform: scale(1.2);
+			color: #000000;
+		}
+/* 
+
+		.add-btn {
+    width: 100px;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
 }
 
-.footer-links a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 20px;
+.add-btn:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
 }
 
-.footer-links a:hover {
-  background-color: #2195ca;
-  color: #f9f3f3;
+.add-btn:active {
+    color: #000
 }
 
-.footer-links {
-  display: flex;
-  justify-content: center;
-  
+.add-btn:active:after {
+    background: transparent;
 }
 
-
-.footer-links   a {
-  display: block;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 500;
-  
-  transition: transform 0.3s ease, color 0.3s ease;
+.add-btn:hover:before {
+    opacity: 1;
 }
 
-.footer-links  a:hover {
-  transform: scale(1.2);
-  color: #000000;
+.add-btn:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
 }
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+} */
 	</style>
 </head>
+
 <body>
 	<nav class="navbar" style="margin: 0px;">
 		<div class="max-width">
@@ -98,18 +177,19 @@
 				</div>
 				<img src="../../../about/logo1.png" alt="" height="55px">
 			</div>
-					  <ul class="menu">
-			<li><a href="#Search" class="menu-btn">Search</a></li>
-			<li><a href="../../../mainpage.html" class="menu-btn">Home</a></li>
-			<li><a href="../../../about/about.html" class="menu-btn">About</a></li>
-			<li><a href="../../../artists.html" class="menu-btn">Artists</a></li>
-			<li><a href="../../../spotlight/spotlight.html" class="menu-btn">Fav Artist</a></li>
-			<!-- <li><a href="#" class="menu-btn">News & Updates</a></li> -->
-		  </ul>
-		  <div class="menu-btn">
-		  </div>
+			<ul class="menu">
+				<li><a href="../../../search.html" class="menu-btn">Search</a></li>
+				<li><a href="../../../index.html" class="menu-btn">Home</a></li>
+				<li><a href="../../../about/about.html" class="menu-btn">About</a></li>
+				<li><a href="../../../artists.html" class="menu-btn">Artists</a></li>
+				<li><a href="../../../spotlight/spotlight.html" class="menu-btn">Fav Artist</a></li>
+				
+				<li><a href="../../../playlist.html" class="menu-btn">Playlist</a></li><!-- <li><a href="#" class="menu-btn">News & Updates</a></li> -->
+			</ul>
+			<div class="menu-btn">
+			</div>
 		</div>
-	  </nav>
+	</nav>
 	<h1>MoonChild Era</h1>
 	<table>
 		<thead>
@@ -124,60 +204,76 @@
 				<td>1</td>
 				<td>Black & White</td>
 				<td>2:46</td>
+				<td><button class="add-btn" data-track="148">Add to playlist</button></td>
 			</tr>
 			<tr>
 				<td>2</td>
 				<td>Luna</td>
 				<td>3:06</td>
+				<td><button class="add-btn" data-track="149">Add to playlist</button></td>
 			</tr>
 			<tr>
 				<td>3</td>
 				<td>Vie</td>
 				<td>2:35</td>
+				<td><button class="add-btn" data-track="150">Add to playlist</button></td>
 			</tr>
 			<tr>
 				<td>4</td>
 				<td>Champagne</td>
 				<td>3:02</td>
+				<td><button class="add-btn" data-track="151">Add to playlist</button></td>
 			</tr>
 			<tr>
 				<td>5</td>
 				<td>Cali</td>
 				<td>5:24</td>
+				<td><button class="add-btn" data-track="152">Add to playlist</button></td>
+
 			</tr>
-			<tr>
-				<td>6</td>
-				<td>Love</td>
-				<td>3:10</td>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>Void</td>
-				<td>3:32</td>
-			</tr>
-			<tr>
-				<td>8</td>
-				<td>Hoops</td>
-				<td>3:10</td>
-			</tr>
-			<tr>
-				<td>9</td>
-				<td>Da Crew</td>
-				<td>3:01</td>
-			</tr>
-			<tr>
-			</tbody>
-    </table>
+		
+				<tr>
+					<td>6</td>
+					<td>Love</td>
+					<td>3:10</td>
+					<td><button class="add-btn" data-track="153">Add to playlist</button></td>
+
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>Void</td>
+					<td>3:32</td>
+					<td><button class="add-btn" data-track="154">Add to playlist</button></td>
+
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>Hoops</td>
+					<td>3:10</td>
+					<td><button class="add-btn" data-track="155">Add to playlist</button></td>
+
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>Da Crew</td>
+					<td>3:01</td>
+					<td><button class="add-btn" data-track="156">Add to playlist</button></td>
+
+				</tr>
+				<tr>
+		</tbody>
+	</table>
 	<footer>
 		<div class="footer-container">
-		  <div class="footer-links">
-		  <a href="alter.html">About</a>
-		  <a href="main.html">Main page</a>
-		  <a href="artist.html">Artists</a>
-	
-		  </div>
+			<div class="footer-links">
+				<a href="alter.html">About</a>
+				<a href="main.html">Main page</a>
+				<a href="artist.html">Artists</a>
+
+			</div>
 		</div>
-		</footer>
+	</footer>
+	<script src="../../../add.js"></script>
 </body>
+
 </html>
-        

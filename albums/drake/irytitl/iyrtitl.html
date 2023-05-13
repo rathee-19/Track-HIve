@@ -1,94 +1,105 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<link rel="stylesheet" type="text/css" href="../../../navbar.css"> 
+	<link rel="stylesheet" type="text/css" href="../../../navbar.css">
 	<title>If You're Reading This It's Too Late</title>
+	<link rel="stylesheet" href="../../album.css">
+	
 	<style>
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
 		body {
-            color: rgb(19, 18, 18);
+			color: rgb(19, 18, 18);
 			font-family: 'Montserrat', sans-serif;
-		background-image: url("../photos/wp11854915.jpeg");
-		background-size: cover;
-		margin: 0px;
-          padding: 0px;
+			background-image: url("../photos/wp11854915.jpeg");
+			background-size: cover;
+			margin: 0px;
+			padding: 0px;
 		}
+
 		h1 {
 			margin-top: 120px;
 			text-align: center;
 		}
+
 		table {
 			margin-top: 20px;
 			margin-left: 400px;
 			border-collapse: collapse;
 			width: 50%;
 		}
-		td, th {
+
+		td,
+		th {
 			padding: 8px;
 			border-bottom: 1px solid #ddd;
 			text-align: left;
 		}
+
 		tr:hover {
 			background-color: #434242;
 		}
 
 		footer {
-  position: fixed;
-  bottom: 0;
-  background-color: #2195ca;
-  color: #fff;
-  font-size: 18px;
-  font-family: 'Ubuntu', sans-serif;
-  padding: 5px 0 5px 0;
-  width: 100%;
-  text-align: center;
-}
-/* .footer-container {
+			position: fixed;
+			bottom: 0;
+			background-color: #2195ca;
+			color: #fff;
+			font-size: 18px;
+			font-family: 'Ubuntu', sans-serif;
+			padding: 5px 0 5px 0;
+			width: 100%;
+			text-align: center;
+		}
+
+		/* .footer-container {
   max-width: 1200px;
   height: 10px; /* adjusted height */
-  /* margin: 0 auto;
+		/* margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }  */
-.footer-links {
-  display: inline-block;
-}
+		.footer-links {
+			display: inline-block;
+		}
 
-.footer-links a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 20px;
-}
+		.footer-links a {
+			color: #fff;
+			text-decoration: none;
+			padding: 10px 20px;
+			border-radius: 20px;
+		}
 
-.footer-links a:hover {
-  background-color: #2195ca;
-  color: #f9f3f3;
-}
+		.footer-links a:hover {
+			background-color: #2195ca;
+			color: #f9f3f3;
+		}
 
-.footer-links {
-  display: flex;
-  justify-content: center;
-  
-}
+		.footer-links {
+			display: flex;
+			justify-content: center;
+
+		}
 
 
-.footer-links   a {
-  display: block;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 500;
-  
-  transition: transform 0.3s ease, color 0.3s ease;
-}
+		.footer-links a {
+			display: block;
+			color: #ffffff;
+			font-size: 18px;
+			font-weight: 500;
 
-.footer-links  a:hover {
-  transform: scale(1.2);
-  color: #000000;
-}
+			transition: transform 0.3s ease, color 0.3s ease;
+		}
+
+		.footer-links a:hover {
+			transform: scale(1.2);
+			color: #000000;
+		}
 	</style>
 </head>
+
 <body>
 	<nav class="navbar" style="margin: 0px;">
 		<div class="max-width">
@@ -96,20 +107,20 @@
 				<div class="logo" style="display: flex;align-items: center;"><a href="">Track<span>Hive</span></a>
 				</div>
 				<img src="../../../about/logo1.png" alt="" height="55px">
-			</div> 
-					  <ul class="menu">
-			<li><a href="#Search" class="menu-btn">Search</a></li>
-			<li><a href="../../../mainpage.html" class="menu-btn">Home</a></li>
-			<li><a href="../../../about/about.html" class="menu-btn">About</a></li>
-			<li><a href="../../../artists.html" class="menu-btn">Artists</a></li>
-			<li><a href="../../../spotlight/spotlight.html" class="menu-btn">Fav Artist</a></li>
-			
-			<!-- <li><a href="#" class="menu-btn">News & Updates</a></li> -->
-		  </ul>
-		  <div class="menu-btn">
-		  </div>
+			</div>
+			<ul class="menu">
+				<li><a href="../../../search.html" class="menu-btn">Search</a></li>
+				<li><a href="../../../index.html" class="menu-btn">Home</a></li>
+				<li><a href="../../../about/about.html" class="menu-btn">About</a></li>
+				<li><a href="../../../artists.html" class="menu-btn">Artists</a></li>
+				<li><a href="../../../spotlight/spotlight.html" class="menu-btn">Fav Artist</a></li>
+				<li><a href="../../../playlist.html" class="menu-btn">Playlist</a></li>
+				<!-- <li><a href="#" class="menu-btn">News & Updates</a></li> -->
+			</ul>
+			<div class="menu-btn">
+			</div>
 		</div>
-	  </nav>
+	</nav>
 	<h1>If You're Reading This It's Too Late</h1>
 	<table>
 		<thead>
@@ -124,94 +135,127 @@
 				<td>1</td>
 				<td>Legend</td>
 				<td>4:01</td>
+				<td><button class="add-btn" data-track="173">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>2</td>
 				<td>Energy</td>
 				<td>3:01</td>
+				<td><button class="add-btn" data-track="174">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>3</td>
 				<td>10 Bands</td>
 				<td>2:57</td>
+				<td><button class="add-btn" data-track="175">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>4</td>
 				<td>Know Yourself</td>
 				<td>4:35</td>
+				<td><button class="add-btn" data-track="176">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>5</td>
 				<td>No Tellin'</td>
 				<td>5:10</td>
+				<td><button class="add-btn" data-track="177">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>6</td>
 				<td>Madonna</td>
 				<td>2:57</td>
+				<td><button class="add-btn" data-track="178">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>7</td>
 				<td>6 God</td>
 				<td>3:00</td>
+				<td><button class="add-btn" data-track="179">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>8</td>
 				<td>Star67</td>
 				<td>4:55</td>
+				<td><button class="add-btn" data-track="180">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>9</td>
 				<td>Preach (featuring PARTYNEXTDOOR)</td>
 				<td>3:57</td>
+				<td><button class="add-btn" data-track="191">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>10</td>
 				<td>Wednesday Night Interlude (featuring PARTYNEXTDOOR)</td>
 				<td>3:32</td>
+				<td><button class="add-btn" data-track="192">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>11</td>
 				<td>Used To (featuring Lil Wayne)</td>
 				<td>4:28</td>
+				<td><button class="add-btn" data-track="193">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>12</td>
 				<td>6 Man</td>
 				<td>2:47</td>
+				<td><button class="add-btn" data-track="194">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>13</td>
 				<td>Now & Forever</td>
 				<td>4:41</td>
+				<td><button class="add-btn" data-track="195">Add to playlist</button></td>
+
 			</tr>
 			<tr>
 				<td>14</td>
 				<td>Company (featuring Travis Scott)</td>
 				<td>4:12</td>
+				<td><button class="add-btn" data-track="196">Add to playlist</button></td>
+
 			</tr>
 			<tr>
-                <td>15</td>
+				<td>15</td>
 				<td>You & The 6</td>
 				<td>4:24</td>
-            </tr>
-            <tr>
-                <td>16</td>
+				<td><button class="add-btn" data-track="197">Add to playlist</button></td>
+
+			</tr>
+			<tr>
+				<td>16</td>
 				<td>Jungle</td>
 				<td>4:43</td>
-            </tr>
-        </tbody>
+				<td><button class="add-btn" data-track="198">Add to playlist</button></td>
+
+			</tr>
+		</tbody>
 	</table>
 	<footer>
 		<div class="footer-container">
-		  <div class="footer-links">
-			<a href="../../../about/about.html">About</a>
-			<a href="../../../mainpage.html">Main page</a>
-			<a href="../../../artists.html">Artists</a>
-	
-		  </div>
+			<div class="footer-links">
+				<a href="../../../about/about.html">About</a>
+				<a href="../../../mainpage.html">Main page</a>
+				<a href="../../../artists.html">Artists</a>
+
+			</div>
 		</div>
-		</footer>
+	</footer>
+	<script src="../../../add.js"></script>
 </body>
+
 </html>
-				

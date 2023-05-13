@@ -3,6 +3,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="../../../navbar.css"> 
 	<title>The College Dropout</title>
+	<link rel="stylesheet" href="../../album.css">
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
@@ -31,6 +32,16 @@
 		}
 		tr:hover {
 			background-color: #434242;
+		}
+		tr {
+			transition: transform 0.5s ease;
+
+		}
+
+		tr:hover {
+			background-color: #434242;
+			/* color: #70cafa; */
+			transform: scale(1.05);
 		}
 
 		footer {
@@ -99,12 +110,13 @@
 				<img src="../../../about/logo1.png" alt="" height="55px">
 			</div>
 					  <ul class="menu">
-			<li><a href="#Search" class="menu-btn">Search</a></li>
-			<li><a href="../../../mainpage.html" class="menu-btn">Home</a></li>
+				<li><a href="../../../search.html" class="menu-btn">Search</a></li>
+			<li><a href="../../../index.html" class="menu-btn">Home</a></li>
 			<li><a href="../../../about/about.html" class="menu-btn">About</a></li>
 			<li><a href="../../../artists.html" class="menu-btn">Artists</a></li>
 			<li><a href="../../../spotlight/spotlight.html" class="menu-btn">Fav Artist</a></li>
 			<!-- <li><a href="#" class="menu-btn">News & Updates</a></li> -->
+			<li><a href="../../../playlist.html" class="menu-btn">Playlist</a></li>
 		  </ul>
 		  <div class="menu-btn">
 		  </div>
@@ -124,56 +136,67 @@
 				<td>1</td>
 				<td>Jal Pari</td>
 				<td>5:39</td>
+				<td><button class="add-btn" data-track="11">Add to playlist</button></td>
 			</tr>
 			<tr>
 				<td>2</td>
 				<td>Ehsaas</td>
 				<td>3:44</td>
+				<td><button class="add-btn" data-track="12">Add to playlist</button></td>
 			</tr>
 			<tr>
 				<td>3</td>
 				<td>Ankhon se </td>
 				<td>4:26</td>
+				<td><button class="add-btn" data-track="13">Add to playlist</button></td>
 			</tr>
 			<tr>
 				<td>4</td>
 				<td>Ab tou Aadat si hai </td>
 				<td>4:24</td>
+				<td><button class="add-btn" data-track="14">Add to playlist</button></td>
 			</tr>
 			<tr>
 				<td>5</td>
 				<td>Aadat(blue version )</td>
 				<td>5:02</td>
+				<td><button class="add-btn" data-track="15">Add to playlist</button></td>
 			</tr>
 			<tr>
 				<td>6</td>
 				<td>Beeghi yaadein</td>
 				<td>4:07</td>
+				<td><button class="add-btn" data-track="16">Add to playlist</button></td>
 			</tr>
 			<tr>
 				<td>7</td>
 				<td>Gal Sun da </td>
 				<td>4:09</td>
+				<td><button class="add-btn" data-track="17">Add to playlist</button></td>
 			</tr>
 			<tr>
 				<td>8</td>
 				<td>Zindagi</td>
 				<td>4:08</td>
+				<td><button class="add-btn" data-track="18">Add to playlist</button></td>
 			</tr>
 			<tr>
 				<td>9</td>
 				<td>Mahi ve</td>
 				<td>4:00</td>
+				<td><button class="add-btn" data-track="19">Add to playlist</button></td>
 			</tr>
 			<tr>
 				<td>10</td>
 				<td>Tehzeeb</td>
 				<td>2:54</td>
+				<td><button class="add-btn" data-track="20">Add to playlist</button></td>
 			</tr>
 			<tr>
 				<td>11</td>
 				<td>Yakeen  </td>
 				<td>4:02</td>
+				<td><button class="add-btn" data-track="21">Add to playlist</button></td>
 			</tr>
 			</tbody>
     </table>
@@ -187,6 +210,7 @@
 		  </div>
 		</div>
 		</footer>
+		<script src="../../../add.js"></script>
 </body>
 </html>
         

@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.min.js"></script>
+	<script>
+		var sound = new Howl({
+		  src: ['https://open.spotify.com/track/0rUN8ascPVT9iiLzC5ocPw?si=6e1a396722b54a2a']
+		});
+		</script> -->
+		
+		
 	<link rel="stylesheet" type="text/css" href="../../../navbar.css"> 
 	<title>Khoobsurat</title>
+	<link rel="stylesheet" href="../../album.css">
+
 	<style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
 		body {
             color: rgb(250, 250, 250);
 			font-family: 'Montserrat', sans-serif;
@@ -22,15 +33,21 @@
 			margin-left: 400px;
 			border-collapse: collapse;
 			width: 50%;
-			margin-bottom: 500px;
 		}
 		td, th {
 			padding: 8px;
 			border-bottom: 1px solid #ddd;
 			text-align: left;
+			
+		}
+		tr{
+			transition: transform 0.5s ease;
+
 		}
 		tr:hover {
 			background-color: #434242;
+			/* color: #70cafa; */
+			transform: scale(1.05);
 		}
 
 		footer {
@@ -99,60 +116,117 @@
 				<img src="../../../about/logo1.png" alt="" height="55px">
 			</div>
 					  <ul class="menu">
-			<li><a href="#Search" class="menu-btn">Search</a></li>
-			<li><a href="../../../mainpage.html" class="menu-btn">Home</a></li>
+			<li><a href="../../../search.html" class="menu-btn">Search</a></li>
+			<li><a href="../../../index.html" class="menu-btn">Home</a></li>
 			<li><a href="../../../about/about.html" class="menu-btn">About</a></li>
 			<li><a href="../../../artists.html" class="menu-btn">Artists</a></li>
 			<li><a href="../../../spotlight/spotlight.html" class="menu-btn">Fav Artist</a></li>
+			<li><a href="../../../playlist.html" class="menu-btn">Playlist</a></li>
+
 			<!-- <li><a href="#" class="menu-btn">News & Updates</a></li> -->
 		  </ul>
 		  <div class="menu-btn">
 		  </div>
 		</div>
 	  </nav>
+	  <!-- <audio controls>
+		<source src="https://example.com/engine-ki-seeti.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	  </audio> -->
 	<h1>Khoobsurat</h1>
 	<table>
 		<thead>
-			<tr>
-				<th>Track #</th>
-				<th>Song Title</th>
-				<th>Song Length</th>
-			</tr>
+		  <tr>
+			<th>Track #</th>
+			<th>Song Title</th>
+			<th>Song Length</th>
+			<th>Action</th>
+		  </tr>
 		</thead>
 		<tbody>
-			<tr>
-				<td>1</td>
-				<td>Engine Ki seeti</td>
-				<td>3:55</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>Naina</td>
-				<td>3:46</td>
-			</tr>
-			<tr>
-				<td>3</td>
-				<td>Maa ka phone</td>
-				<td>4:08</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>Baal Khade</td>
-				<td>3:59</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>Preet</td>
-				<td>5:04</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>Abhi Toh party Shuru Hui Hai </td>
-				<td>3:00</td>
-			</tr>
-			
+		  <tr>
+			<td>1</td>
+			<td>Engine Ki seeti</td>
+			<td>3:55</td>
+			<td><button class="add-btn" data-track="68">Add to playlist</button></td>
+		  </tr>
+		  <tr>
+			<td>2</td>
+			<td>Naina</td>
+			<td>3:46</td>
+			<td><button class="add-btn" data-track="69">Add to playlist</button></td>
+		  </tr>
+		  <tr>
+			<td>3</td>
+			<td>Maa ka phone</td>
+			<td>4:08</td>
+			<td><button class="add-btn" data-track="70">Add to playlist</button></td>
+		  </tr>
+		  <tr>
+			<td>4</td>
+			<td>Baal Khade</td>
+			<td>3:59</td>
+			<td><button class="add-btn" data-track="71">Add to playlist</button></td>
+		  </tr>
+		  <tr>
+			<td>5</td>
+			<td>Preet</td>
+			<td>5:04</td>
+			<td><button class="add-btn" data-track="72">Add to playlist</button></td>
+		  </tr>
+		  <tr>
+			<td>6</td>
+			<td>Abhi Toh party Shuru Hui Hai</td>
+			<td>3:00</td>
+			<td><button class="add-btn" data-track="73">Add to playlist</button></td>
+		  </tr>
+		  <!-- <tr>
+			<td>6</td>
+			<td>Abhi Toh party Shuru Hui Hai</td>
+			<td>3:00</td>
+			<td><button class="add-to-playlist" data-song-id="111" data-song-name="Chinni Chinni Aasa">Add to playlist</button></td>
+		  </tr> -->
 		</tbody>
-	</table>
+	  </table>
+	  <!-- <script>
+
+// const addButtons = document.querySelectorAll('.add-btn');
+// addButtons.forEach(button => {
+//   button.addEventListener('click', addToPlaylist);
+// });
+// function addToPlaylist(event) {
+//   const trackNumber = event.target.getAttribute('data-track');
+//   const tableRow = document.querySelector(`tr[data-track="${trackNumber}"]`);
+//   const songTitle = tableRow.querySelector('td:nth-child(2)').textContent;
+//   const songLength = tableRow.querySelector('td:nth-child(3)').textContent;
+//   // Retrieve singer name using any oth<script src="../../../add.js"></script>er method, e.g. a data attribute on the table row
+//   const singer = tableRow.getAttribute('data-singer');
+
+//   // Now you can store this information in a database using your preferred method, e.g. AJAX, fetch API, etc.
+//   // For example, you can send a POST request to a server-side script that will handle the database storage.
+// }
+const addButton = document.querySelector('.add-btn');
+addButton.addEventListener('click', function() {
+  const track = this.getAttribute('data-track');
+  const title = document.querySelector(`tr[data-track="${track}"] td:nth-child(2)`).textContent;
+  const singer = 'Some singer'; // Replace with code to fetch singer name
+  const length = document.querySelector(`tr[data-track="${track}"] td:nth-child(3)`).textContent;
+
+  fetch('../../../add-to-playlist', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/x-www-form-urlencoded'
+  },
+  body: `title=${title}&singer=${singer}&length=${length}`
+})
+.then(response => response.json())
+.then(data => console.log(data.message))
+.catch(error => console.error(error));
+});
+
+	  </script> -->
+	  
+	<!-- <button style="margin-bottom: 5vh ; color: #000000;" onclick="sound.play()">Play Audio</button> -->
 	<footer>
 		<div class="footer-container">
 		  <div class="footer-links">
@@ -163,5 +237,9 @@
 		  </div>
 		</div>
 		</footer>
+
+		<script src="../../../add.js">
+		</script>
+		<script src="../../../playlist.js"></script>
 </body>
 </html>

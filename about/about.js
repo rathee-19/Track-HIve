@@ -22,6 +22,7 @@
 
 // typeWriter(elementEl);
 
+
 var TxtType = function(t, e, i) {
   this.toRotate = e,
   this.el = t,

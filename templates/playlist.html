@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Playlist</title>
+</head>
+<script>
+  function remove_from_playlist(song_id) {
+    console.log(JSON.stringify({ song_id }))
+    fetch('/remove_from_playlist', {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ song_id }),
+    }).then(e => e.text()).then(e => {
+      alert(e)
+      location.reload(true)
+    })
+  }
+</script>
+
+<body>
+  <h1>Playlist</h1>
+  <ul>
+    {% for song in songs %}
+    <li>
+      {{ song[1] }}
+      <!-- by {{ song[2] }} from {{ song[3] }} -->
+      <button onclick="remove_from_playlist({{ song[0] }})">Remove</button>
+    </li>
+    {% endfor %}
+  </ul>
+</body>
+
+</html>

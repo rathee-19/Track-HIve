@@ -20,6 +20,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
   </head>
 <body>
+	
+	 <video id="video-background" autoplay muted loop>
+    <source src="./dog.mp4" type="video/mp4">
+    <source src="./dog.mp4" type="video/webm">
+    <!-- Your browser does not support the video tag. -->
+  </video>
     <nav class="navbar" >
         <div class="max-width" style="padding-left: 20px;">
             <div style="display: flex;">
@@ -45,7 +51,7 @@
     <div id="search_bar">
     <div class="container">
         <form role="search" method="GET" class="search-form form" action="./result.html">
-            <label for="search">Search:</label>
+            <label for="search"></label>
             <input type="search" id="search" name="term">
         <input type="submit" class="search-submit button" value="&#xf002" />
     </form>

@@ -111,5 +111,14 @@ body {
     color: #292826;
     outline: 0;
   }
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* min-width: 50%; */
+    /* min-height: 50%; */
+    width: 100%;
+    z-index: -1;
+    }
   
   

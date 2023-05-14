@@ -1,5 +1,7 @@
 body {
     background: #292826;
+      overflow-y: hidden;
+
   }
   
   .wrapper {
@@ -119,6 +121,8 @@ body {
     /* min-height: 50%; */
     width: 100%;
     z-index: -1;
+      overflow-y: hidden;
+
     }
   
   
